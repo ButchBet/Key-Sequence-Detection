@@ -7,7 +7,7 @@
 
     <title>Key Sequence</title>
 
-    <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+    <!-- <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script> -->
     <script src="script.js" defer type="module"></script>
 
     <link rel="stylesheet" href="style.css">
@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="container">
-        <ul class="result">
+        <ul class="result" id="result">
             <li class="result__item">_</li>
             <li class="result__item">_</li>
             <li class="result__item">_</li>
@@ -25,6 +25,12 @@
         </ul>
     
         <button class="container__button" id="button">Check</button>
+    </div>
+
+    <div class="winerPopup hidden">
+        <span class="winerPopup__close" id="popupClose">X</span>
+
+        <p class="winerPopup__text">Ding! Ding!</p>
     </div>
 </body>
 </html>
